@@ -12,6 +12,17 @@ function handleForm(event){
     const task = document.createElement('li');
     task.innerText = textForm;
 
+    //it is essential to add a delete button
+    const delBtn = document.createElement('button');
+    
+    //very important - this specific button must not be treated as an ordinary button inside of form
+    delBtn.setAttribute('role', 'button');
+    delBtn.innerText = 'Delete'
+    delBtn.style['margin-left'] = '10px';
+
+    //the delete button must be added to a task
+    task.append(delBtn);
+
     todoList.append(task);
 
     //to make sure that the input field gets cleaned
