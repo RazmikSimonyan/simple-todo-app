@@ -2,9 +2,13 @@ const todoList = document.querySelector('#todo-list');
 const todoForm = document.querySelector('#todo-form');
 const inputForm = document.querySelector('#input-form');
 
+
+
+
 todoForm.addEventListener('submit', handleForm)
 
 function handleForm(event){
+
     event.preventDefault();
 
     const textForm = inputForm.value;

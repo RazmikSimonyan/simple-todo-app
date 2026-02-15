@@ -46,6 +46,7 @@ header{
 }
 
 #submit, #todo-list button{
+    border-radius:4px;
     padding:5px 10px;
     margin-bottom:2px;
     cursor: pointer;
