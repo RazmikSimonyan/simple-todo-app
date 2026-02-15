@@ -25,9 +25,14 @@ function handleForm(event){
 
     todoList.append(task);
 
+    delBtn.addEventListener('click', handleDeleteButton)
     //to make sure that the input field gets cleaned
     inputForm.value = '';
 
     //to make sure that the focus is still intact
     inputForm.focus();
+}
+
+function handleDeleteButton(){
+    this.closest('li').remove()
 }
