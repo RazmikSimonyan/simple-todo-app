@@ -1,14 +1,61 @@
-/* *{
+*{
+    box-sizing: border-box;
     margin:0;
     padding:0;
-    box-sizing: border-box;
-} */
+}
 
 
-/* Mobile View */ 
+.container{
+    max-width: 500px;
+    border:2px solid;
+    margin:0 auto;
+}
 
-/* h2, .todo-parent{
-    max-width: 600px;   
-    border:2px solid black;
-    margin: 0 auto;
-} */
+#todo-list{
+    list-style: none;
+}
+#todo-list li{
+    font-size:20px;
+}
+
+header{
+    text-align: center; 
+}
+
+h1{
+    font-size:3em;
+    padding:20px;
+}
+
+header{
+    margin-top:20px;
+}
+
+.todo-parent > .container{
+    text-align: center;
+}
+
+#todo-form{
+    padding:10px 0;
+}
+#input-form{
+    padding:3px;
+    font-size: 18px;
+    color:green;
+    font-weight: bolder;
+}
+
+#submit, #todo-list button{
+    padding:5px 10px;
+    margin-bottom:2px;
+    cursor: pointer;
+    background-color: hsl(0, 3%, 70%);
+    color:white;
+    transition: all 0.5s linear;
+    &:hover{
+        background-color: hsl(0, 3%, 40%);
+    }
+}
+
+
+
